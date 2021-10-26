@@ -12,5 +12,4 @@ public interface VetService {
     Vet save(Vet owner);
 
     Set<Vet> findAll();
-
 }
