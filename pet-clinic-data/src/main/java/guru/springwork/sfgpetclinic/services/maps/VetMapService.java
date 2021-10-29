@@ -1,13 +1,23 @@
 package guru.springwork.sfgpetclinic.services.maps;
 
 import guru.springwork.sfgpetclinic.models.Vet;
+import guru.springwork.sfgpetclinic.services.SpecialtyService;
 import guru.springwork.sfgpetclinic.services.VetService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
+
+    private final SpecialtyService specialtyService;
+
+    @Autowired
+    public VetMapService(SpecialtyService specialtyService) {
+        this.specialtyService = specialtyService;
+    }
+
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
@@ -25,7 +35,16 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public Vet save(Vet vet) {
-        return super.save(vet);
+        if(vet.getSpecialties().size() > 0) {
+            vet.getSpecialties().forEach(specialty -> {
+                if(specialty.getId() == null) {
+                    specialty.setId(specialtyService.save(specialty).getId());
+                }
+            });
+            return super.save(vet);
+        } else {
+            throw new RuntimeException("Specialisations are required !");
+        }
     }
 
     @Override
