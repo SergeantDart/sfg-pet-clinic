@@ -1,6 +1,6 @@
 package guru.springwork.sfgpetclinic.services.maps;
 
-import guru.springwork.sfgpetclinic.models.BaseEntity;
+import guru.springwork.sfgpetclinic.model.BaseEntity;
 
 import java.util.*;
 

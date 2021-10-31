@@ -1,6 +1,6 @@
 package guru.springwork.sfgpetclinic.services.maps;
 
-import guru.springwork.sfgpetclinic.models.Specialty;
+import guru.springwork.sfgpetclinic.model.Specialty;
 import guru.springwork.sfgpetclinic.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package guru.springwork.sfgpetclinic.bootstrap;
 
-import guru.springwork.sfgpetclinic.models.*;
+import guru.springwork.sfgpetclinic.model.*;
 import guru.springwork.sfgpetclinic.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

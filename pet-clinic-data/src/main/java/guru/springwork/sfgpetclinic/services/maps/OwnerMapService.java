@@ -1,7 +1,6 @@
 package guru.springwork.sfgpetclinic.services.maps;
 
-import guru.springwork.sfgpetclinic.models.Owner;
-import guru.springwork.sfgpetclinic.models.Pet;
+import guru.springwork.sfgpetclinic.model.Owner;
 import guru.springwork.sfgpetclinic.services.OwnerService;
 import guru.springwork.sfgpetclinic.services.PetService;
 import guru.springwork.sfgpetclinic.services.PetTypeService;

@@ -1,6 +1,6 @@
 package guru.springwork.sfgpetclinic.services.maps;
 
-import guru.springwork.sfgpetclinic.models.Vet;
+import guru.springwork.sfgpetclinic.model.Vet;
 import guru.springwork.sfgpetclinic.services.SpecialtyService;
 import guru.springwork.sfgpetclinic.services.VetService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package guru.springwork.sfgpetclinic.models;
+package guru.springwork.sfgpetclinic.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
