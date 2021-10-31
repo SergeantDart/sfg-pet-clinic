@@ -2,6 +2,7 @@ package guru.springwork.sfgpetclinic.bootstrap;
 
 import guru.springwork.sfgpetclinic.model.*;
 import guru.springwork.sfgpetclinic.service.*;
+import org.apache.tomcat.jni.Local;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -16,14 +17,16 @@ public class DataLoader implements CommandLineRunner {
     private final PetTypeService petTypeService;
     private final PetService petService;
     private final SpecialtyService specialtyService;
+    private final VisitService visitService;
 
     @Autowired
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, PetService petService, SpecialtyService specialtyService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, PetService petService, SpecialtyService specialtyService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.petService = petService;
         this.specialtyService = specialtyService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -111,5 +114,17 @@ public class DataLoader implements CommandLineRunner {
         vetService.save(v2);
 
         System.out.println("Loaded vets...");
+
+        Visit vst1 = new Visit();
+        vst1.setDate(LocalDate.now());
+        vst1.setDescription("It will be a wonderful visit !");
+        vst1.setPet(savedP1);
+
+        Visit vst2 = new Visit();
+        vst2.setDate(LocalDate.now());
+        vst2.setDescription("It will be the second most wonderful visit !");
+        vst2.setPet(savedP2);
+
+        System.out.println("Loaded visits...");
     }
 }
