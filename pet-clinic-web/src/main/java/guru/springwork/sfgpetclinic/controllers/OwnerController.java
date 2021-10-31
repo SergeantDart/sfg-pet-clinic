@@ -1,6 +1,6 @@
 package guru.springwork.sfgpetclinic.controllers;
 
-import guru.springwork.sfgpetclinic.services.OwnerService;
+import guru.springwork.sfgpetclinic.service.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
