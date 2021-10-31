@@ -87,7 +87,7 @@ public class DataLoader implements CommandLineRunner {
         o1.setAddress("1st Decebal");
         o1.setCity("Bucharest");
         o1.setTelephone("0712121212");
-        o1.getPets().add(savedP1);
+        o1.addPets(savedP1);
         ownerService.save(o1);
 
         Owner o2 = new Owner();
@@ -96,7 +96,7 @@ public class DataLoader implements CommandLineRunner {
         o2.setAddress("16th Virgil Madgearu");
         o2.setCity("Botosani");
         o2.setTelephone("0799999999");
-        o2.getPets().add(savedP2);
+        o2.addPets(savedP2);
         ownerService.save(o2);
 
         System.out.println("Loaded owners...");
@@ -119,11 +119,13 @@ public class DataLoader implements CommandLineRunner {
         vst1.setDate(LocalDate.now());
         vst1.setDescription("It will be a wonderful visit !");
         vst1.setPet(savedP1);
+        visitService.save(vst1);
 
         Visit vst2 = new Visit();
         vst2.setDate(LocalDate.now());
         vst2.setDescription("It will be the second most wonderful visit !");
         vst2.setPet(savedP2);
+        visitService.save(vst2);
 
         System.out.println("Loaded visits...");
     }

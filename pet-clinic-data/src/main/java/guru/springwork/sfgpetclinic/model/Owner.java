@@ -21,6 +21,10 @@ public class Owner extends Person {
         return pets;
     }
 
+    public void addPets(Pet pet) {
+        pet.setOwner(this);
+        this.pets.add(pet);
+    }
     public void setPets(Set<Pet> pets) {
         this.pets = pets;
     }
