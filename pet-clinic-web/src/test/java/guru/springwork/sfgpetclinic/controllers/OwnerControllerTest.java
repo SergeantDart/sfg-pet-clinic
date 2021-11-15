@@ -18,7 +18,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(MockitoExtension.class)
@@ -61,6 +60,5 @@ class OwnerControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(view().name("not_implemented"));
         verifyZeroInteractions(ownerService);
-
     }
 }
