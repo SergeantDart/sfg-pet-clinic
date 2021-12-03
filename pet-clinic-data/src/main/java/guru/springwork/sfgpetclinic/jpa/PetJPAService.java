@@ -1,4 +1,4 @@
-package guru.springwork.sfgpetclinic.service.jpa;
+package guru.springwork.sfgpetclinic.jpa;
 
 import guru.springwork.sfgpetclinic.model.Pet;
 import guru.springwork.sfgpetclinic.repository.PetRepository;

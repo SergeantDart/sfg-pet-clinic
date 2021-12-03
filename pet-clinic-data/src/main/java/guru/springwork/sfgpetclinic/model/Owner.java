@@ -30,6 +30,7 @@ public class Owner extends Person {
         this.pets.add(pet);
     }
 
+<<<<<<< HEAD
     public Pet getPet(String name) {
         return getPet(name, false);
     }
@@ -46,6 +47,22 @@ public class Owner extends Person {
             }
         }
         return null;
+=======
+    public Set<Pet> getPets() {
+        return pets;
+    }
+    
+    public void setPets(Set<Pet> pets) {
+        this.pets = pets;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+>>>>>>> d97dfa6d6fe24ede4d35c1c4a2d088546917cc6c
     }
 
 }
