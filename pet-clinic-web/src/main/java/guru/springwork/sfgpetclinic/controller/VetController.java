@@ -1,4 +1,4 @@
-package guru.springwork.sfgpetclinic.controllers;
+package guru.springwork.sfgpetclinic.controller;
 
 import guru.springwork.sfgpetclinic.service.VetService;
 import org.springframework.beans.factory.annotation.Autowired;

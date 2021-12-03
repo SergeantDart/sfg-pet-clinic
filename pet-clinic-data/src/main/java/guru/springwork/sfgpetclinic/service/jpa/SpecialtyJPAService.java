@@ -1,6 +1,6 @@
 package guru.springwork.sfgpetclinic.service.jpa;
 
-import guru.springwork.sfgpetclinic.model.Specialty;
+import guru.springwork.sfgpetclinic.model.Speciality;
 import guru.springwork.sfgpetclinic.repository.SpecialtyRepository;
 import guru.springwork.sfgpetclinic.service.SpecialtyService;
 import org.springframework.context.annotation.Profile;
@@ -20,24 +20,24 @@ public class SpecialtyJPAService implements SpecialtyService {
     }
 
     @Override
-    public Set<Specialty> findAll() {
-        Set<Specialty> specialties = new HashSet<>();
+    public Set<Speciality> findAll() {
+        Set<Speciality> specialties = new HashSet<>();
         specialtyRepository.findAll().forEach(specialties::add);
         return specialties;
     }
 
     @Override
-    public Specialty findById(Long id) {
+    public Speciality findById(Long id) {
         return specialtyRepository.findById(id).orElse(null);
     }
 
     @Override
-    public Specialty save(Specialty specialty) {
+    public Speciality save(Speciality specialty) {
         return specialtyRepository.save(specialty);
     }
 
     @Override
-    public void delete(Specialty specialty) {
+    public void delete(Speciality specialty) {
         specialtyRepository.delete(specialty);
     }
 

@@ -3,6 +3,7 @@ package guru.springwork.sfgpetclinic.service.jpa;
 import guru.springwork.sfgpetclinic.model.Visit;
 import guru.springwork.sfgpetclinic.repository.VisitRepository;
 import guru.springwork.sfgpetclinic.service.CrudService;
+import guru.springwork.sfgpetclinic.service.VisitService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.Set;
 
 @Service
 @Profile("jpa")
-public class VisitJPAService implements CrudService<Visit, Long> {
+public class VisitJPAService implements VisitService {
 
     private final VisitRepository visitRepository;
 
