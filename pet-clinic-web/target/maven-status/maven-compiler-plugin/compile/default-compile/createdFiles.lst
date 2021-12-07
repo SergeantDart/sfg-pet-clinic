@@ -1,0 +1,7 @@
+guru\springwork\sfgpetclinic\SfgPetClinicApplication.class
+guru\springwork\sfgpetclinic\controller\VetController.class
+guru\springwork\sfgpetclinic\controller\VisitController.class
+guru\springwork\sfgpetclinic\controller\PetController.class
+guru\springwork\sfgpetclinic\controller\IndexController.class
+guru\springwork\sfgpetclinic\bootstrap\DataLoader.class
+guru\springwork\sfgpetclinic\controller\OwnerController.class

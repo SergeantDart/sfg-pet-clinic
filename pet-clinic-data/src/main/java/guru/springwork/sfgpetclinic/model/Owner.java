@@ -30,24 +30,24 @@ public class Owner extends Person {
         this.pets.add(pet);
     }
 
-<<<<<<< HEAD
     public Pet getPet(String name) {
         return getPet(name, false);
     }
 
     public Pet getPet(String name, boolean ignoreNew) {
         name = name.toLowerCase();
-        for(Pet pet : pets) {
-            if(!ignoreNew || !pet.isNew()) {
+        for (Pet pet : pets) {
+            if (!ignoreNew || !pet.isNew()) {
                 String tempName = pet.getName();
                 tempName = tempName.toLowerCase();
-                if(tempName.equals(name)) {
+                if (tempName.equals(name)) {
                     return pet;
                 }
             }
         }
         return null;
-=======
+    }
+
     public Set<Pet> getPets() {
         return pets;
     }
@@ -62,7 +62,6 @@ public class Owner extends Person {
 
     public void setAddress(String address) {
         this.address = address;
->>>>>>> d97dfa6d6fe24ede4d35c1c4a2d088546917cc6c
     }
 
 }

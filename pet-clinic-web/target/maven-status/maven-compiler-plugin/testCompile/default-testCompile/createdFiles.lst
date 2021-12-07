@@ -1,2 +1,5 @@
+guru\springwork\sfgpetclinic\controller\PetControllerTest.class
+guru\springwork\sfgpetclinic\controller\OwnerControllerTest.class
 guru\springwork\sfgpetclinic\map\OwnerMapServiceTest.class
 guru\springwork\sfgpetclinic\jpa\OwnerJPAServiceTest.class
+guru\springwork\sfgpetclinic\SfgPetClinicApplicationTests.class

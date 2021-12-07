@@ -10,11 +10,8 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
-<<<<<<< HEAD:pet-clinic-data/src/main/java/guru/springwork/sfgpetclinic/service/jpa/OwnerJPAService.java
 import java.util.List;
 import java.util.Locale;
-=======
->>>>>>> d97dfa6d6fe24ede4d35c1c4a2d088546917cc6c:pet-clinic-data/src/main/java/guru/springwork/sfgpetclinic/jpa/OwnerJPAService.java
 import java.util.Set;
 
 @Service
@@ -60,10 +57,7 @@ public class OwnerJPAService implements OwnerService {
         ownerRepository.deleteById(id);
     }
 
-    @Override
-    public Owner findByLastName(String lastName) {
-        return ownerRepository.findByLastName(lastName);
-    }
+
 
     @Override
     public List<Owner> findAllByLastNameLike(String lastName) {

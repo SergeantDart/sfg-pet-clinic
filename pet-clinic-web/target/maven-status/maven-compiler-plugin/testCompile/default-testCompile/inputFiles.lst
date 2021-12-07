@@ -1,2 +1,5 @@
-C:\Users\ZZ032J826\IdeaProjects\Udemy-Spring-Framework-5-Beginner-to-Guru\sfg-pet-clinic\pet-clinic-web\src\test\java\guru\springwork\sfgpetclinic\SfgPetClinicApplicationTests.java
-C:\Users\ZZ032J826\IdeaProjects\Udemy-Spring-Framework-5-Beginner-to-Guru\sfg-pet-clinic\pet-clinic-web\src\test\java\guru\springwork\sfgpetclinic\controllers\OwnerControllerTest.java
+C:\Users\ZZ032J826\IdeaProjects\Udemy-Spring-Framework-5-Beginner-to-Guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\test\java\guru\springwork\sfgpetclinic\map\OwnerMapServiceTest.java
+C:\Users\ZZ032J826\IdeaProjects\Udemy-Spring-Framework-5-Beginner-to-Guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\test\java\guru\springwork\sfgpetclinic\SfgPetClinicApplicationTests.java
+C:\Users\ZZ032J826\IdeaProjects\Udemy-Spring-Framework-5-Beginner-to-Guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\test\java\guru\springwork\sfgpetclinic\jpa\OwnerJPAServiceTest.java
+C:\Users\ZZ032J826\IdeaProjects\Udemy-Spring-Framework-5-Beginner-to-Guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\test\java\guru\springwork\sfgpetclinic\controller\PetControllerTest.java
+C:\Users\ZZ032J826\IdeaProjects\Udemy-Spring-Framework-5-Beginner-to-Guru\sfg-pet-clinic\sfg-pet-clinic\pet-clinic-web\src\test\java\guru\springwork\sfgpetclinic\controller\OwnerControllerTest.java

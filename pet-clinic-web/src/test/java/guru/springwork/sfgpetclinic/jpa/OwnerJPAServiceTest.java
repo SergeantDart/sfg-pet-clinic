@@ -91,14 +91,4 @@ class OwnerJPAServiceTest {
         ownerJPAService.deleteById(1L);
         verify(ownerRepository).deleteById(anyLong());
     }
-
-    @Test
-    void findByLastName() {
-        returnOwner.setId(1L);
-        returnOwner.setLastName("Smith");
-        when(ownerRepository.findByLastName(any())).thenReturn(returnOwner);
-        Owner owner = ownerJPAService.findByLastName(lastName);
-        assertEquals(lastName, owner.getLastName());
-        verify(ownerRepository).findByLastName(any());
-    }
 }
